@@ -1,0 +1,44 @@
+{
+  "name": "storybook-demo",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/js/StorybookDemo.js",
+  "module": "dist/es6/index.js",
+  "types": "dist/declaration/index.d.ts",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "webpack-dev-server --env.dev --open",
+    "build": "webpack",
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "author": {
+    "name": "wh.y",
+    "email": "wh.y@navercorp.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/getElementsByName/storybook-demo"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@storybook/addon-info": "^3.4.7",
+    "@storybook/react": "^3.4.7",
+    "@types/jest": "^23.0.0",
+    "awesome-typescript-loader": "^4.0.0",
+    "babel-core": "^6.26.3",
+    "jest": "^23.1.0",
+    "react": "^16.4.0",
+    "react-docgen-typescript-webpack-plugin": "^1.1.0",
+    "react-dom": "^16.4.0",
+    "ts-jest": "^22.4.6",
+    "typescript": "^2.9.1",
+    "webpack": "^3.0.0"
+  },
+  "dependencies": {
+    "@types/react": "^16.3.17",
+    "@types/react-dom": "^16.0.6",
+    "@types/storybook__addon-actions": "^3.0.3",
+    "@types/storybook__addon-info": "^3.2.3",
+    "@types/storybook__react": "^3.0.7"
+  }
+}
